@@ -1,0 +1,224 @@
+{
+  "tool": {
+    "id": "contagem-absoluta-de-neutrofilos",
+    "title": "Contagem absoluta de neutrófilos",
+    "short": "Neutrófilos por µL e grau de neutropenia",
+    "desc": "Calcula a contagem absoluta de neutrófilos (leucócitos × % de segmentados e bastões) e classifica a neutropenia em leve, moderada, grave ou profunda.",
+    "lead": "Converte o leucograma em contagem absoluta de neutrófilos, base para definir neutropenia febril, ajustar quimioterapia e avaliar risco de infecção.",
+    "spec": [
+      "hematologia-e-hemoterapia",
+      "oncologia-clinica",
+      "medicina-laboratorial",
+      "infectologia"
+    ],
+    "fields": [
+      [
+        "leuco",
+        "Leucócitos totais",
+        "num",
+        {
+          "min": 10,
+          "max": 500000,
+          "step": 1,
+          "unit": "/µL",
+          "ph": "5000"
+        }
+      ],
+      [
+        "seg",
+        "Segmentados",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 0.1,
+          "unit": "%",
+          "ph": "60"
+        }
+      ],
+      [
+        "bast",
+        "Bastões (opcional)",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 0.1,
+          "unit": "%",
+          "ph": "0",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p><strong>CAN = leucócitos (/µL) × (segmentados % + bastões %) ÷ 100</strong>.</p>",
+    "table": [
+      [
+        "CAN (/µL)",
+        "Classificação"
+      ],
+      [
+        "≥ 1.500",
+        "Normal (adulto)"
+      ],
+      [
+        "1.000–1.499",
+        "Neutropenia leve"
+      ],
+      [
+        "500–999",
+        "Neutropenia moderada"
+      ],
+      [
+        "&lt; 500",
+        "Neutropenia grave"
+      ],
+      [
+        "&lt; 100",
+        "Neutropenia profunda"
+      ]
+    ],
+    "table_note": "A IDSA define neutropenia, para neutropenia febril, como CAN &lt; 500/µL ou com queda prevista para &lt; 500/µL em 48 horas.",
+    "tips": [
+      "Neutropenia febril inclui também quem tem CAN entre 500 e 1.000/µL com queda prevista para menos de 500 nas próximas 48 horas (nadir da quimioterapia).",
+      "Neutropenia étnica benigna: pessoas de ascendência africana podem ter CAN de 1.000 a 1.500/µL sem risco aumentado de infecção.",
+      "Se o laboratório já informa neutrófilos absolutos (contagem automatizada), use esse valor: é mais preciso que refazer a conta a partir da porcentagem.",
+      "Com leucócitos muito baixos, o diferencial manual tem grande erro amostral: confirme a tendência com exames seriados."
+    ],
+    "sources": [
+      [
+        "Freifeld AG et al. Clinical practice guideline for the use of antimicrobial agents in neutropenic patients with cancer: 2010 update by the Infectious Diseases Society of America. Clin Infect Dis, 2011.",
+        "https://doi.org/10.1093/cid/cir073"
+      ]
+    ],
+    "cases": [
+      [
+        "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+        {
+          "leuco": 5000,
+          "seg": 60
+        },
+        {
+          "raw": {
+            "anc": 3000
+          },
+          "main": "3.000",
+          "level": "low"
+        }
+      ],
+      [
+        "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+        {
+          "leuco": 2000,
+          "seg": 40,
+          "bast": 5
+        },
+        {
+          "raw": {
+            "anc": 900
+          },
+          "level": "mid",
+          "verdict": "moderada"
+        }
+      ],
+      [
+        "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+        {
+          "leuco": 2000,
+          "seg": 20,
+          "bast": 5
+        },
+        {
+          "raw": {
+            "anc": 500
+          },
+          "level": "mid",
+          "verdict": "moderada"
+        }
+      ],
+      [
+        "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+        {
+          "leuco": 800,
+          "seg": 10
+        },
+        {
+          "raw": {
+            "anc": 80
+          },
+          "level": "high",
+          "verdict": "profunda"
+        }
+      ],
+      [
+        "Soma acima de 100%: erro",
+        {
+          "leuco": 5000,
+          "seg": 90,
+          "bast": 20
+        },
+        {
+          "error": true
+        }
+      ]
+    ],
+    "batch": "onco-diagnostico",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "onco-diagnostico",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/onco-diagnostico.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 5,
+      "passed": 5,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 2,
+      "passed": 2,
+      "cases": [
+        {
+          "label": "Percentual20+5 aplicado a8000",
+          "input": {
+            "leuco": 8000,
+            "seg": 20,
+            "bast": 5
+          },
+          "expected": {
+            "anc": 2000
+          },
+          "status": "passed",
+          "failures": []
+        },
+        {
+          "label": "Percentuais totais acima100 são rejeitados",
+          "input": {
+            "leuco": 8000,
+            "seg": 90,
+            "bast": 15
+          },
+          "expected": {
+            "error": true
+          },
+          "status": "passed",
+          "failures": []
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/onco-diagnostico.php",
+    "sha256": "29e7fd6aab1f8bf937a34267255855c21f804696da2b4817d6197578cdcbe743",
+    "bytes": 78570
+  },
+  "clinicalValidation": "not-performed"
+}

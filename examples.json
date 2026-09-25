@@ -1,0 +1,99 @@
+[
+  {
+    "label": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+    "input": {
+      "leuco": 5000,
+      "seg": 60
+    },
+    "expected": {
+      "raw": {
+        "anc": 3000
+      },
+      "main": "3.000",
+      "level": "low"
+    },
+    "originalInput": {
+      "leuco": 5000,
+      "seg": 60
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+    "input": {
+      "leuco": 2000,
+      "seg": 40,
+      "bast": 5
+    },
+    "expected": {
+      "raw": {
+        "anc": 900
+      },
+      "level": "mid",
+      "verdict": "moderada"
+    },
+    "originalInput": {
+      "leuco": 2000,
+      "seg": 40,
+      "bast": 5
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+    "input": {
+      "leuco": 2000,
+      "seg": 20,
+      "bast": 5
+    },
+    "expected": {
+      "raw": {
+        "anc": 500
+      },
+      "level": "mid",
+      "verdict": "moderada"
+    },
+    "originalInput": {
+      "leuco": 2000,
+      "seg": 20,
+      "bast": 5
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+    "input": {
+      "leuco": 800,
+      "seg": 10
+    },
+    "expected": {
+      "raw": {
+        "anc": 80
+      },
+      "level": "high",
+      "verdict": "profunda"
+    },
+    "originalInput": {
+      "leuco": 800,
+      "seg": 10
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Soma acima de 100%: erro",
+    "input": {
+      "leuco": 5000,
+      "seg": 90,
+      "bast": 20
+    },
+    "expected": {
+      "error": true
+    },
+    "originalInput": {
+      "leuco": 5000,
+      "seg": 90,
+      "bast": 20
+    },
+    "expandedZeroOptions": []
+  }
+]
