@@ -1,0 +1,380 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field leuco",
+    "input": {
+      "seg": 60
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field leuco",
+    "input": {
+      "leuco": "",
+      "seg": 60
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" leuco",
+    "input": {
+      "leuco": "NaN",
+      "seg": 60
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" leuco",
+    "input": {
+      "leuco": "Infinity",
+      "seg": 60
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" leuco",
+    "input": {
+      "leuco": "1e309",
+      "seg": 60
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" leuco",
+    "input": {
+      "leuco": "invalid",
+      "seg": 60
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} leuco",
+    "input": {
+      "leuco": {},
+      "seg": 60
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true leuco",
+    "input": {
+      "leuco": true,
+      "seg": 60
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum leuco",
+    "input": {
+      "leuco": 9,
+      "seg": 60
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum leuco",
+    "input": {
+      "leuco": 550000,
+      "seg": 60
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field seg",
+    "input": {
+      "leuco": 5000
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "seg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field seg",
+    "input": {
+      "leuco": 5000,
+      "seg": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "seg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" seg",
+    "input": {
+      "leuco": 5000,
+      "seg": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "seg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" seg",
+    "input": {
+      "leuco": 5000,
+      "seg": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "seg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" seg",
+    "input": {
+      "leuco": 5000,
+      "seg": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "seg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" seg",
+    "input": {
+      "leuco": 5000,
+      "seg": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "seg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} seg",
+    "input": {
+      "leuco": 5000,
+      "seg": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "seg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true seg",
+    "input": {
+      "leuco": 5000,
+      "seg": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "seg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum seg",
+    "input": {
+      "leuco": 5000,
+      "seg": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "seg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum seg",
+    "input": {
+      "leuco": 5000,
+      "seg": 110
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "seg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" bast",
+    "input": {
+      "leuco": 5000,
+      "seg": 60,
+      "bast": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bast"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" bast",
+    "input": {
+      "leuco": 5000,
+      "seg": 60,
+      "bast": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bast"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" bast",
+    "input": {
+      "leuco": 5000,
+      "seg": 60,
+      "bast": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bast"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" bast",
+    "input": {
+      "leuco": 5000,
+      "seg": 60,
+      "bast": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bast"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} bast",
+    "input": {
+      "leuco": 5000,
+      "seg": 60,
+      "bast": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bast"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true bast",
+    "input": {
+      "leuco": 5000,
+      "seg": 60,
+      "bast": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bast"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum bast",
+    "input": {
+      "leuco": 5000,
+      "seg": 60,
+      "bast": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "bast"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum bast",
+    "input": {
+      "leuco": 5000,
+      "seg": 60,
+      "bast": 110
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "bast"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

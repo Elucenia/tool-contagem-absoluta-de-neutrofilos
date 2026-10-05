@@ -1,6 +1,13 @@
 [
   {
-    "label": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+    "id": "contagem-absoluta-de-neutrofilos",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+    "originalInput": {
+      "leuco": 5000,
+      "seg": 60
+    },
     "input": {
       "leuco": 5000,
       "seg": 60
@@ -12,14 +19,35 @@
       "main": "3.000",
       "level": "low"
     },
-    "originalInput": {
-      "leuco": 5000,
-      "seg": 60
+    "recordedResult": {
+      "main": [
+        "3.000",
+        "/µL"
+      ],
+      "label": "Contagem absoluta de neutrófilos",
+      "raw": {
+        "anc": 3000
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+    "id": "contagem-absoluta-de-neutrofilos",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+    "originalInput": {
+      "leuco": 2000,
+      "seg": 40,
+      "bast": 5
+    },
     "input": {
       "leuco": 2000,
       "seg": 40,
@@ -32,15 +60,35 @@
       "level": "mid",
       "verdict": "moderada"
     },
-    "originalInput": {
-      "leuco": 2000,
-      "seg": 40,
-      "bast": 5
+    "recordedResult": {
+      "main": [
+        "900",
+        "/µL"
+      ],
+      "label": "Contagem absoluta de neutrófilos",
+      "raw": {
+        "anc": 900
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+    "id": "contagem-absoluta-de-neutrofilos",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+    "originalInput": {
+      "leuco": 2000,
+      "seg": 20,
+      "bast": 5
+    },
     "input": {
       "leuco": 2000,
       "seg": 20,
@@ -53,15 +101,34 @@
       "level": "mid",
       "verdict": "moderada"
     },
-    "originalInput": {
-      "leuco": 2000,
-      "seg": 20,
-      "bast": 5
+    "recordedResult": {
+      "main": [
+        "500",
+        "/µL"
+      ],
+      "label": "Contagem absoluta de neutrófilos",
+      "raw": {
+        "anc": 500
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+    "id": "contagem-absoluta-de-neutrofilos",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+    "originalInput": {
+      "leuco": 800,
+      "seg": 10
+    },
     "input": {
       "leuco": 800,
       "seg": 10
@@ -73,14 +140,35 @@
       "level": "high",
       "verdict": "profunda"
     },
-    "originalInput": {
-      "leuco": 800,
-      "seg": 10
+    "recordedResult": {
+      "main": [
+        "80",
+        "/µL"
+      ],
+      "label": "Contagem absoluta de neutrófilos",
+      "raw": {
+        "anc": 80
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Soma acima de 100%: erro",
+    "id": "contagem-absoluta-de-neutrofilos",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "Soma acima de 100%: erro",
+    "originalInput": {
+      "leuco": 5000,
+      "seg": 90,
+      "bast": 20
+    },
     "input": {
       "leuco": 5000,
       "seg": 90,
@@ -89,11 +177,16 @@
     "expected": {
       "error": true
     },
-    "originalInput": {
-      "leuco": 5000,
-      "seg": 90,
-      "bast": 20
+    "recordedResult": {
+      "error": "A soma de segmentados e bastões passa de 100%."
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

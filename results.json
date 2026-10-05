@@ -1,0 +1,385 @@
+{
+  "id": "contagem-absoluta-de-neutrofilos",
+  "at": "2026-10-05T17:29:13.018Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/contagem-absoluta-de-neutrofilos/calculator.js",
+    "bytes": 5125,
+    "sha256": "e864fbe12ea6192acfdb4df75758d2b5c59c1074a497c3d29545296e2d79caac"
+  },
+  "cases": [
+    {
+      "name": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+      "input": {
+        "leuco": 5000,
+        "seg": 60
+      },
+      "obtained": {
+        "id": "contagem-absoluta-de-neutrofilos",
+        "main": [
+          "3.000",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "raw": {
+          "anc": 3000
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "3.000",
+          "obtained": "3.000",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.anc",
+          "expected": 3000,
+          "obtained": 3000,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.anc",
+          "expected": 3000,
+          "obtained": 3000,
+          "tolerance": 3e-9,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "3.000",
+          "obtained": "3.000",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "/µL",
+          "obtained": "/µL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+      "input": {
+        "leuco": 2000,
+        "seg": 40,
+        "bast": 5
+      },
+      "obtained": {
+        "id": "contagem-absoluta-de-neutrofilos",
+        "main": [
+          "900",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "raw": {
+          "anc": 900
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.anc",
+          "expected": 900,
+          "obtained": 900,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.anc",
+          "expected": 900,
+          "obtained": 900,
+          "tolerance": 9e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "900",
+          "obtained": "900",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "/µL",
+          "obtained": "/µL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+      "input": {
+        "leuco": 2000,
+        "seg": 20,
+        "bast": 5
+      },
+      "obtained": {
+        "id": "contagem-absoluta-de-neutrofilos",
+        "main": [
+          "500",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "raw": {
+          "anc": 500
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.anc",
+          "expected": 500,
+          "obtained": 500,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.anc",
+          "expected": 500,
+          "obtained": 500,
+          "tolerance": 5e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "500",
+          "obtained": "500",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "/µL",
+          "obtained": "/µL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+      "input": {
+        "leuco": 800,
+        "seg": 10
+      },
+      "obtained": {
+        "id": "contagem-absoluta-de-neutrofilos",
+        "main": [
+          "80",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "raw": {
+          "anc": 80
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.anc",
+          "expected": 80,
+          "obtained": 80,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.anc",
+          "expected": 80,
+          "obtained": 80,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "80",
+          "obtained": "80",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "/µL",
+          "obtained": "/µL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Soma acima de 100%: erro",
+      "input": {
+        "leuco": 5000,
+        "seg": 90,
+        "bast": 20
+      },
+      "obtained": {
+        "error": "A soma de segmentados e bastões passa de 100%.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "checks": [
+        {
+          "at": "recorded-rejection",
+          "expected": "4xx with error and no result",
+          "obtained": {
+            "status": 422,
+            "error": "A soma de segmentados e bastões passa de 100%.",
+            "result": false
+          },
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 32,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

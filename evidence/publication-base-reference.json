@@ -1,0 +1,88 @@
+{
+  "id": "contagem-absoluta-de-neutrofilos",
+  "repository": "Elucenia/tool-contagem-absoluta-de-neutrofilos",
+  "branch": "main",
+  "commit": "a8dca2a9d0f95ea386580cf2ccb5e9811dfae1b9",
+  "archiveSha256": "c18a4c39cd36903cc3ebcf580c1c36437e3de8afdeb9fb644527935d999ee1b7",
+  "protectedFiles": [
+    {
+      "path": ".gitattributes",
+      "type": "blob",
+      "mode": "100644",
+      "size": 19,
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "mode": "100644",
+      "size": 279,
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "mode": "100644",
+      "size": 42,
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    },
+    {
+      "path": "AUTHORSHIP.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 3367,
+      "sha": "7def8f9211fcfaee326e085673e87018460744cd",
+      "sha256": "8f00e9b1208e278092e7f35abff1e7db8c45dd8d1f3d0ad8af58f179d2379171"
+    },
+    {
+      "path": "CITATION.cff",
+      "type": "blob",
+      "mode": "100644",
+      "size": 967,
+      "sha": "1e9e4cf699da1d3b45a95c193ced0a7c1e5a9bc8",
+      "sha256": "bf320651849f6513db753b51c8361e07425bb0efded943e0d4266c682ffecdf0"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1483,
+      "sha": "a137733e68f346993f284c1b4d98258dfa625424",
+      "sha256": "652e3d84d07c1c34c78ca535424320878611ab19b18f43ebe4d501bd9f213051"
+    },
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 11358,
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1682,
+      "sha": "afa29bc9fd1b8a0bc6b7e108b9c2f965a0eee152",
+      "sha256": "2de7006fb02718d5f83c3b7693fcdfde9c08162ac51b5c654c73d36c9b618e6e"
+    },
+    {
+      "path": "SECURITY.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 894,
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    }
+  ],
+  "receipt": {
+    "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+    "bytes": 6066154,
+    "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+  },
+  "remoteCodeExecuted": false,
+  "freshBranchReadRequiredBeforePublication": true
+}

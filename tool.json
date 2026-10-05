@@ -5,6 +5,7 @@
     "short": "Neutrófilos por µL e grau de neutropenia",
     "desc": "Calcula a contagem absoluta de neutrófilos (leucócitos × % de segmentados e bastões) e classifica a neutropenia em leve, moderada, grave ou profunda.",
     "lead": "Converte o leucograma em contagem absoluta de neutrófilos, base para definir neutropenia febril, ajustar quimioterapia e avaliar risco de infecção.",
+    "kind": "Calculadora",
     "spec": [
       "hematologia-e-hemoterapia",
       "oncologia-clinica",
@@ -51,39 +52,6 @@
       ]
     ],
     "formula": "<p><strong>CAN = leucócitos (/µL) × (segmentados % + bastões %) ÷ 100</strong>.</p>",
-    "table": [
-      [
-        "CAN (/µL)",
-        "Classificação"
-      ],
-      [
-        "≥ 1.500",
-        "Normal (adulto)"
-      ],
-      [
-        "1.000–1.499",
-        "Neutropenia leve"
-      ],
-      [
-        "500–999",
-        "Neutropenia moderada"
-      ],
-      [
-        "&lt; 500",
-        "Neutropenia grave"
-      ],
-      [
-        "&lt; 100",
-        "Neutropenia profunda"
-      ]
-    ],
-    "table_note": "A IDSA define neutropenia, para neutropenia febril, como CAN &lt; 500/µL ou com queda prevista para &lt; 500/µL em 48 horas.",
-    "tips": [
-      "Neutropenia febril inclui também quem tem CAN entre 500 e 1.000/µL com queda prevista para menos de 500 nas próximas 48 horas (nadir da quimioterapia).",
-      "Neutropenia étnica benigna: pessoas de ascendência africana podem ter CAN de 1.000 a 1.500/µL sem risco aumentado de infecção.",
-      "Se o laboratório já informa neutrófilos absolutos (contagem automatizada), use esse valor: é mais preciso que refazer a conta a partir da porcentagem.",
-      "Com leucócitos muito baixos, o diferencial manual tem grande erro amostral: confirme a tendência com exames seriados."
-    ],
     "sources": [
       [
         "Freifeld AG et al. Clinical practice guideline for the use of antimicrobial agents in neutropenic patients with cancer: 2010 update by the Infectious Diseases Society of America. Clin Infect Dis, 2011.",
@@ -161,9 +129,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -176,40 +141,123 @@
       "testedAt": "2026-09-25",
       "total": 2,
       "passed": 2,
-      "cases": [
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "CAN:leucócitos×(segmentados+bastões)/100; contexto IDSA atualização 2010/publicação 2011",
+    "implementationVersion": "contagem-absoluta-de-neutrofilos@native-2026-10-03+e864fbe12ea6",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/21258094/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "CAN = leucócitos (/µL) × (segmentados % + bastões %) ÷ 100 .",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "leuco",
+            "label": "Leucócitos totais",
+            "type": "num",
+            "min": 10,
+            "max": 500000,
+            "unit": "/µL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "seg",
+            "label": "Segmentados",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "bast",
+            "label": "Bastões (opcional)",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "7fdd3b09b50fee80c6594337851b9e9dbf1c33f3b620c31d2349696923a459d1"
+      },
+      "sourceEditions": [
         {
-          "label": "Percentual20+5 aplicado a8000",
-          "input": {
-            "leuco": 8000,
-            "seg": 20,
-            "bast": 5
+          "citation": "Freifeld AG et al. Clinical practice guideline for the use of antimicrobial agents in neutropenic patients with cancer: 2010 update by the Infectious Diseases Society of America. Clin Infect Dis, 2011.",
+          "url": "https://doi.org/10.1093/cid/cir073",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Clinical practice guideline for the use of antimicrobial agents in neutropenic patients with cancer: 2010 update by the infectious diseases society of america.",
+            "year": "2011",
+            "firstPublicationDate": "2011-02-01",
+            "doi": "10.1093/cid/cir073",
+            "pmid": "21258094",
+            "journal": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
+            "authors": "Freifeld AG, Bow EJ, Sepkowitz KA, Boeckh MJ, Ito JI, Mullen CA, Raad II, Rolston KV, Young JA, Wingard JR, Infectious Diseases Society of America."
           },
-          "expected": {
-            "anc": 2000
-          },
-          "status": "passed",
-          "failures": []
-        },
-        {
-          "label": "Percentuais totais acima100 são rejeitados",
-          "input": {
-            "leuco": 8000,
-            "seg": 90,
-            "bast": 15
-          },
-          "expected": {
-            "error": true
-          },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/21258094/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "de5acec28d498fa6f3b5a222aea3ce8e55773ae2d4549811e0d1bd0919a7eb1e",
+          "matchedBy": "exact-DOI-or-PMID"
         }
-      ]
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-09-25",
+        "total": 2,
+        "passed": 2,
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "e864fbe12ea6192acfdb4df75758d2b5c59c1074a497c3d29545296e2d79caac"
+    },
+    "limits": "A referência IDSA 2010/2011 aborda febre e neutropenia induzida por quimioterapia em pacientes com câncer, com estratificação dependente de sinais/sintomas, câncer, terapia e comorbidades. O valor calculado da contagem absoluta não substitui essa avaliação. Os limiares e unidades da definição devem ser conferidos no guideline integral; o resumo lido não os apresenta.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.772Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "O resumo não fornece definição numérica de ANC/neutropenia, unidades ou duração prevista. Não confirma a fórmula de contagem absoluta no texto disponível."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/contagem-absoluta-de-neutrofilos/calculator.js",
+    "bytes": 5125,
+    "sha256": "e864fbe12ea6192acfdb4df75758d2b5c59c1074a497c3d29545296e2d79caac"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "1fe9450c13ef28553d74464da80a9849a76012f8758c41171d9cf94382a1b804",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 2,
+      "sha256": "6f3b081bbbd2921a72319d638b39bddff2a5c605e0d18276d66785211d8b01e4",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 2,
+      "sha256": "6f3b081bbbd2921a72319d638b39bddff2a5c605e0d18276d66785211d8b01e4",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
