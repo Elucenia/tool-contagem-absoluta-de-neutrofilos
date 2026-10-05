@@ -1,0 +1,925 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "contagem-absoluta-de-neutrofilos",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/contagem-absoluta-de-neutrofilos/calculator.js",
+    "sha256": "e864fbe12ea6192acfdb4df75758d2b5c59c1074a497c3d29545296e2d79caac",
+    "bytes": 5125
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 5,
+    "replayed": 5,
+    "passed": 5,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "contagem-absoluta-de-neutrofilos",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+      "originalInput": {
+        "leuco": 5000,
+        "seg": 60
+      },
+      "input": {
+        "leuco": 5000,
+        "seg": 60
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "anc": 3000
+        },
+        "main": "3.000",
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "3.000",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "raw": {
+          "anc": 3000
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/contagem-absoluta-de-neutrofilos/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "leuco": 5000,
+            "seg": 60
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/contagem-absoluta-de-neutrofilos/calculate",
+          "startedAt": "2026-10-05T17:36:15.646Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "contagem-absoluta-de-neutrofilos",
+              "main": [
+                "3.000",
+                "/µL"
+              ],
+              "label": "Contagem absoluta de neutrófilos",
+              "raw": {
+                "anc": 3000
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "36e654e9726ed03591d7a4d259d206147a53c6606e4a13eb7c94886915ff4f49",
+          "bytes": 176,
+          "elapsedMs": 3.5568999999995867
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/contagem-absoluta-de-neutrofilos/calculate",
+        "startedAt": "2026-10-05T17:36:15.646Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "contagem-absoluta-de-neutrofilos",
+            "main": [
+              "3.000",
+              "/µL"
+            ],
+            "label": "Contagem absoluta de neutrófilos",
+            "raw": {
+              "anc": 3000
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "36e654e9726ed03591d7a4d259d206147a53c6606e4a13eb7c94886915ff4f49",
+        "bytes": 176,
+        "elapsedMs": 3.5568999999995867
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "3.000",
+            "obtained": "3.000",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.anc",
+            "expected": 3000,
+            "obtained": 3000,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.anc",
+            "expected": 3000,
+            "obtained": 3000,
+            "tolerance": 3e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "3.000",
+            "obtained": "3.000",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "/µL",
+            "obtained": "/µL",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "contagem-absoluta-de-neutrofilos",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+      "originalInput": {
+        "leuco": 2000,
+        "seg": 40,
+        "bast": 5
+      },
+      "input": {
+        "leuco": 2000,
+        "seg": 40,
+        "bast": 5
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "anc": 900
+        },
+        "level": "mid",
+        "verdict": "moderada"
+      },
+      "recordedResult": {
+        "main": [
+          "900",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "raw": {
+          "anc": 900
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/contagem-absoluta-de-neutrofilos/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "leuco": 2000,
+            "seg": 40,
+            "bast": 5
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/contagem-absoluta-de-neutrofilos/calculate",
+          "startedAt": "2026-10-05T17:36:15.959Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "contagem-absoluta-de-neutrofilos",
+              "main": [
+                "900",
+                "/µL"
+              ],
+              "label": "Contagem absoluta de neutrófilos",
+              "raw": {
+                "anc": 900
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "6e12cf31f14c6b878437b4cec73e37778ee914554572a8d27142a77c8299329e",
+          "bytes": 173,
+          "elapsedMs": 6.629799999995157
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/contagem-absoluta-de-neutrofilos/calculate",
+        "startedAt": "2026-10-05T17:36:15.959Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "contagem-absoluta-de-neutrofilos",
+            "main": [
+              "900",
+              "/µL"
+            ],
+            "label": "Contagem absoluta de neutrófilos",
+            "raw": {
+              "anc": 900
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "6e12cf31f14c6b878437b4cec73e37778ee914554572a8d27142a77c8299329e",
+        "bytes": 173,
+        "elapsedMs": 6.629799999995157
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.anc",
+            "expected": 900,
+            "obtained": 900,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.anc",
+            "expected": 900,
+            "obtained": 900,
+            "tolerance": 9e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "900",
+            "obtained": "900",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "/µL",
+            "obtained": "/µL",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "contagem-absoluta-de-neutrofilos",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+      "originalInput": {
+        "leuco": 2000,
+        "seg": 20,
+        "bast": 5
+      },
+      "input": {
+        "leuco": 2000,
+        "seg": 20,
+        "bast": 5
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "anc": 500
+        },
+        "level": "mid",
+        "verdict": "moderada"
+      },
+      "recordedResult": {
+        "main": [
+          "500",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "raw": {
+          "anc": 500
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/contagem-absoluta-de-neutrofilos/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "leuco": 2000,
+            "seg": 20,
+            "bast": 5
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/contagem-absoluta-de-neutrofilos/calculate",
+          "startedAt": "2026-10-05T17:36:16.269Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "contagem-absoluta-de-neutrofilos",
+              "main": [
+                "500",
+                "/µL"
+              ],
+              "label": "Contagem absoluta de neutrófilos",
+              "raw": {
+                "anc": 500
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "134466c1662e69c6883a207ab8b2f3f184e6aa6211d35288f7f314f44509fd31",
+          "bytes": 173,
+          "elapsedMs": 4.54490000000078
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/contagem-absoluta-de-neutrofilos/calculate",
+        "startedAt": "2026-10-05T17:36:16.269Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "contagem-absoluta-de-neutrofilos",
+            "main": [
+              "500",
+              "/µL"
+            ],
+            "label": "Contagem absoluta de neutrófilos",
+            "raw": {
+              "anc": 500
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "134466c1662e69c6883a207ab8b2f3f184e6aa6211d35288f7f314f44509fd31",
+        "bytes": 173,
+        "elapsedMs": 4.54490000000078
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.anc",
+            "expected": 500,
+            "obtained": 500,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.anc",
+            "expected": 500,
+            "obtained": 500,
+            "tolerance": 5e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "500",
+            "obtained": "500",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "/µL",
+            "obtained": "/µL",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "contagem-absoluta-de-neutrofilos",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+      "originalInput": {
+        "leuco": 800,
+        "seg": 10
+      },
+      "input": {
+        "leuco": 800,
+        "seg": 10
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "anc": 80
+        },
+        "level": "high",
+        "verdict": "profunda"
+      },
+      "recordedResult": {
+        "main": [
+          "80",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "raw": {
+          "anc": 80
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/contagem-absoluta-de-neutrofilos/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "leuco": 800,
+            "seg": 10
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/contagem-absoluta-de-neutrofilos/calculate",
+          "startedAt": "2026-10-05T17:36:16.582Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "contagem-absoluta-de-neutrofilos",
+              "main": [
+                "80",
+                "/µL"
+              ],
+              "label": "Contagem absoluta de neutrófilos",
+              "raw": {
+                "anc": 80
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "2daec6418d09a17791a13613bc5e4f021bc68e460a87810d5278037e8196e905",
+          "bytes": 171,
+          "elapsedMs": 7.016100000000733
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/contagem-absoluta-de-neutrofilos/calculate",
+        "startedAt": "2026-10-05T17:36:16.582Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "contagem-absoluta-de-neutrofilos",
+            "main": [
+              "80",
+              "/µL"
+            ],
+            "label": "Contagem absoluta de neutrófilos",
+            "raw": {
+              "anc": 80
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "2daec6418d09a17791a13613bc5e4f021bc68e460a87810d5278037e8196e905",
+        "bytes": 171,
+        "elapsedMs": 7.016100000000733
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.anc",
+            "expected": 80,
+            "obtained": 80,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.anc",
+            "expected": 80,
+            "obtained": 80,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "80",
+            "obtained": "80",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "/µL",
+            "obtained": "/µL",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "contagem-absoluta-de-neutrofilos",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "Soma acima de 100%: erro",
+      "originalInput": {
+        "leuco": 5000,
+        "seg": 90,
+        "bast": 20
+      },
+      "input": {
+        "leuco": 5000,
+        "seg": 90,
+        "bast": 20
+      },
+      "amendments": [],
+      "expected": {
+        "error": true
+      },
+      "recordedResult": {
+        "error": "A soma de segmentados e bastões passa de 100%."
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/contagem-absoluta-de-neutrofilos/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "leuco": 5000,
+            "seg": 90,
+            "bast": 20
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/contagem-absoluta-de-neutrofilos/calculate",
+          "startedAt": "2026-10-05T17:36:16.893Z",
+          "status": 422,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "error": "A soma de segmentados e bastões passa de 100%.",
+            "code": "FORMULA_DOMAIN"
+          },
+          "responseSha256": "05cc0ee7f18af91ab3ad4121ffc4e1510099d002d287d4b1ce494b28fe4b05bd",
+          "bytes": 83,
+          "elapsedMs": 3.658400000000256
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/contagem-absoluta-de-neutrofilos/calculate",
+        "startedAt": "2026-10-05T17:36:16.893Z",
+        "status": 422,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "error": "A soma de segmentados e bastões passa de 100%.",
+          "code": "FORMULA_DOMAIN"
+        },
+        "responseSha256": "05cc0ee7f18af91ab3ad4121ffc4e1510099d002d287d4b1ce494b28fe4b05bd",
+        "bytes": 83,
+        "elapsedMs": 3.658400000000256
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "recorded-rejection",
+            "expected": "4xx with error and no result",
+            "obtained": {
+              "status": 422,
+              "error": "A soma de segmentados e bastões passa de 100%.",
+              "result": false
+            },
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
