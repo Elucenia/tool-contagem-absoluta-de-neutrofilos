@@ -1,0 +1,1225 @@
+{
+  "id": "contagem-absoluta-de-neutrofilos",
+  "implementationVersion": "contagem-absoluta-de-neutrofilos@native-2026-10-05+cf93ed1284e1",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrófilos (segmentados + bastões)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "60,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sem neutropenia",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrófilos (segmentados + bastões)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "45,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neutropenia moderada (500 a 999/µL)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrófilos (segmentados + bastões)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "25,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neutropenia moderada (500 a 999/µL)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrófilos (segmentados + bastões)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neutropenia profunda (< 100/µL)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Com febre (≥ 38,3 °C ou ≥ 38,0 °C por 1 h), é neutropenia febril: antibiótico empírico em até 1 hora.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrophils (segmented + bands)",
+                "locale": "en",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "60.0%",
+                "locale": "en",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "No neutropenia",
+            "locale": "en",
+            "template": "documented-authored-031fcbeb3f9ecfc3be65"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrophils (segmented + bands)",
+                "locale": "en",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "45.0%",
+                "locale": "en",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Moderate neutropenia (500 to 999/µL)",
+            "locale": "en",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrophils (segmented + bands)",
+                "locale": "en",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "25.0%",
+                "locale": "en",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Moderate neutropenia (500 to 999/µL)",
+            "locale": "en",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrophils (segmented + bands)",
+                "locale": "en",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "en",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Profound neutropenia (< 100/µL)",
+            "locale": "en",
+            "template": "documented-authored-252325d2430918458155"
+          },
+          "note": {
+            "text": "With fever (≥ 38,3 °C or ≥ 38,0 °C for 1 h), it is febrile neutropenia: empirical antibiotic within 1 hour.",
+            "locale": "en",
+            "template": "documented-authored-296a78859b6e5f49b51b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrófilos (segmentados + en banda)",
+                "locale": "es",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "60,0%",
+                "locale": "es",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sin neutropenia",
+            "locale": "es",
+            "template": "documented-authored-031fcbeb3f9ecfc3be65"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrófilos (segmentados + en banda)",
+                "locale": "es",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "45,0%",
+                "locale": "es",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neutropenia moderada (500 a 999/µL)",
+            "locale": "es",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrófilos (segmentados + en banda)",
+                "locale": "es",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "25,0%",
+                "locale": "es",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neutropenia moderada (500 a 999/µL)",
+            "locale": "es",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrófilos (segmentados + en banda)",
+                "locale": "es",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "es",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neutropenia profunda (< 100/µL)",
+            "locale": "es",
+            "template": "documented-authored-252325d2430918458155"
+          },
+          "note": {
+            "text": "Con fiebre (≥ 38,3 °C o ≥ 38,0 °C durante 1 h), es neutropenia febril: antibiótico empírico en hasta 1 hora.",
+            "locale": "es",
+            "template": "documented-authored-296a78859b6e5f49b51b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrophiles (segmentés + bâtonnets)",
+                "locale": "fr",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "60,0%",
+                "locale": "fr",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sans neutropénie",
+            "locale": "fr",
+            "template": "documented-authored-031fcbeb3f9ecfc3be65"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrophiles (segmentés + bâtonnets)",
+                "locale": "fr",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "45,0%",
+                "locale": "fr",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neutropénie modérée (500 à 999/µL)",
+            "locale": "fr",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrophiles (segmentés + bâtonnets)",
+                "locale": "fr",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "25,0%",
+                "locale": "fr",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neutropénie modérée (500 à 999/µL)",
+            "locale": "fr",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrophiles (segmentés + bâtonnets)",
+                "locale": "fr",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "fr",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neutropénie profonde (< 100/µL)",
+            "locale": "fr",
+            "template": "documented-authored-252325d2430918458155"
+          },
+          "note": {
+            "text": "En cas de fièvre (≥ 38,3 °C ou ≥ 38,0 °C pendant 1 h), il s’agit d’une neutropénie fébrile : antibiotique empirique dans un délai d’1 heure.",
+            "locale": "fr",
+            "template": "documented-authored-296a78859b6e5f49b51b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrophile (segmentierte + Stabkernige)",
+                "locale": "de",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "60,0%",
+                "locale": "de",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Keine Neutropenie",
+            "locale": "de",
+            "template": "documented-authored-031fcbeb3f9ecfc3be65"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrophile (segmentierte + Stabkernige)",
+                "locale": "de",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "45,0%",
+                "locale": "de",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mäßige Neutropenie (500 bis 999/µL)",
+            "locale": "de",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrophile (segmentierte + Stabkernige)",
+                "locale": "de",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "25,0%",
+                "locale": "de",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mäßige Neutropenie (500 bis 999/µL)",
+            "locale": "de",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrophile (segmentierte + Stabkernige)",
+                "locale": "de",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "de",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Tiefgreifende Neutropenie (< 100/µL)",
+            "locale": "de",
+            "template": "documented-authored-252325d2430918458155"
+          },
+          "note": {
+            "text": "Bei Fieber (≥ 38,3 °C oder ≥ 38,0 °C für 1 h) handelt es sich um eine febrile Neutropenie: empirisches Antibiotikum innerhalb von 1 Stunde.",
+            "locale": "de",
+            "template": "documented-authored-296a78859b6e5f49b51b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrofili (segmentati + bastoncelli)",
+                "locale": "it",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "60,0%",
+                "locale": "it",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Senza neutropenia",
+            "locale": "it",
+            "template": "documented-authored-031fcbeb3f9ecfc3be65"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrofili (segmentati + bastoncelli)",
+                "locale": "it",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "45,0%",
+                "locale": "it",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neutropenia moderata (500 a 999/µL)",
+            "locale": "it",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrofili (segmentati + bastoncelli)",
+                "locale": "it",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "25,0%",
+                "locale": "it",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neutropenia moderata (500 a 999/µL)",
+            "locale": "it",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Neutrofili (segmentati + bastoncelli)",
+                "locale": "it",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "10,0%",
+                "locale": "it",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neutropenia profonda (< 100/µL)",
+            "locale": "it",
+            "template": "documented-authored-252325d2430918458155"
+          },
+          "note": {
+            "text": "Con febbre (≥ 38,3 °C o ≥ 38,0 °C per 1 h), è neutropenia febbrile: antibiotico empirico entro 1 ora.",
+            "locale": "it",
+            "template": "documented-authored-296a78859b6e5f49b51b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "العدلات (المجزأة + العصوية)",
+                "locale": "ar",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "٦٠٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "لا توجد قلة العدلات",
+            "locale": "ar",
+            "template": "documented-authored-031fcbeb3f9ecfc3be65"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "العدلات (المجزأة + العصوية)",
+                "locale": "ar",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "٤٥٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "قلة عدلات متوسطة (500 إلى 999/µL)",
+            "locale": "ar",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "العدلات (المجزأة + العصوية)",
+                "locale": "ar",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "٢٥٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "قلة عدلات متوسطة (500 إلى 999/µL)",
+            "locale": "ar",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "العدلات (المجزأة + العصوية)",
+                "locale": "ar",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "١٠٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "قلة عدلات شديدة جدًا (< 100/µL)",
+            "locale": "ar",
+            "template": "documented-authored-252325d2430918458155"
+          },
+          "note": {
+            "text": "مع الحمى (≥ 38,3 °C أو ≥ 38,0 °C لمدة 1 ساعة)، فهي قلة عدلات حموية: مضاد حيوي تجريبي خلال ساعة واحدة.",
+            "locale": "ar",
+            "template": "documented-authored-296a78859b6e5f49b51b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "中性粒细胞（分叶核 + 杆状核）",
+                "locale": "zh",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "60.0%",
+                "locale": "zh",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "无中性粒细胞减少症",
+            "locale": "zh",
+            "template": "documented-authored-031fcbeb3f9ecfc3be65"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "中性粒细胞（分叶核 + 杆状核）",
+                "locale": "zh",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "45.0%",
+                "locale": "zh",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中度中性粒细胞减少（500至999/µL）",
+            "locale": "zh",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "中性粒细胞（分叶核 + 杆状核）",
+                "locale": "zh",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "25.0%",
+                "locale": "zh",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中度中性粒细胞减少（500至999/µL）",
+            "locale": "zh",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "中性粒细胞（分叶核 + 杆状核）",
+                "locale": "zh",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "zh",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "重度中性粒细胞减少（< 100/µL）",
+            "locale": "zh",
+            "template": "documented-authored-252325d2430918458155"
+          },
+          "note": {
+            "text": "伴有发热（≥ 38,3 °C 或 ≥ 38,0 °C 持续 1 h）时，为发热性中性粒细胞减少症：1小时内经验性抗生素治疗。",
+            "locale": "zh",
+            "template": "documented-authored-296a78859b6e5f49b51b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "好中球（分葉核＋桿状核）",
+                "locale": "ja",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "60.0%",
+                "locale": "ja",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "好中球減少なし",
+            "locale": "ja",
+            "template": "documented-authored-031fcbeb3f9ecfc3be65"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "好中球（分葉核＋桿状核）",
+                "locale": "ja",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "45.0%",
+                "locale": "ja",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等度好中球減少（500〜999/µL）",
+            "locale": "ja",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "好中球（分葉核＋桿状核）",
+                "locale": "ja",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "25.0%",
+                "locale": "ja",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等度好中球減少（500〜999/µL）",
+            "locale": "ja",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "好中球（分葉核＋桿状核）",
+                "locale": "ja",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "ja",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高度好中球減少（< 100/µL）",
+            "locale": "ja",
+            "template": "documented-authored-252325d2430918458155"
+          },
+          "note": {
+            "text": "発熱（≥ 38,3 °C または ≥ 38,0 °C が1 h持続）を伴う場合は、発熱性好中球減少症です：1時間以内に経験的抗菌薬投与。",
+            "locale": "ja",
+            "template": "documented-authored-296a78859b6e5f49b51b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "न्यूट्रोफिल (सेगमेंटेड + बैंड)",
+                "locale": "hi",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "60.0%",
+                "locale": "hi",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "न्यूट्रोपेनिया नहीं",
+            "locale": "hi",
+            "template": "documented-authored-031fcbeb3f9ecfc3be65"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "न्यूट्रोफिल (सेगमेंटेड + बैंड)",
+                "locale": "hi",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "45.0%",
+                "locale": "hi",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मध्यम न्यूट्रोपेनिया (500 से 999/µL)",
+            "locale": "hi",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "न्यूट्रोफिल (सेगमेंटेड + बैंड)",
+                "locale": "hi",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "25.0%",
+                "locale": "hi",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मध्यम न्यूट्रोपेनिया (500 से 999/µL)",
+            "locale": "hi",
+            "template": "documented-authored-ae831abac119b5f47a02"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "न्यूट्रोफिल (सेगमेंटेड + बैंड)",
+                "locale": "hi",
+                "template": "documented-authored-aee24b938668c3a84d25"
+              },
+              "value": {
+                "text": "10.0%",
+                "locale": "hi",
+                "template": "documented-authored-90fc45360e0c8dc8a35e",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "गंभीर न्यूट्रोपेनिया (< 100/µL)",
+            "locale": "hi",
+            "template": "documented-authored-252325d2430918458155"
+          },
+          "note": {
+            "text": "बुखार के साथ (≥ 38,3 °C या ≥ 38,0 °C 1 h तक), यह फ़ेब्राइल न्यूट्रोपेनिया है: 1 घंटे के भीतर अनुभवजन्य एंटीबायोटिक।",
+            "locale": "hi",
+            "template": "documented-authored-296a78859b6e5f49b51b"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

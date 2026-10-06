@@ -69,3 +69,45 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+No neutropenia
+
+| Result details | |
+| --- | --- |
+| Neutrophils (segmented + bands) | 60.0% |
+
+
+### 2
+
+Moderate neutropenia (500 to 999/µL)
+
+| Result details | |
+| --- | --- |
+| Neutrophils (segmented + bands) | 45.0% |
+
+
+### 3
+
+Moderate neutropenia (500 to 999/µL)
+
+| Result details | |
+| --- | --- |
+| Neutrophils (segmented + bands) | 25.0% |
+
+
+### 4
+
+Profound neutropenia (< 100/µL)
+
+| Result details | |
+| --- | --- |
+| Neutrophils (segmented + bands) | 10.0% |
+
+With fever (≥ 38,3 °C or ≥ 38,0 °C for 1 h), it is febrile neutropenia: empirical antibiotic within 1 hour.
+

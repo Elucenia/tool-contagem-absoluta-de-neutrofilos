@@ -69,3 +69,45 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Sem neutropenia
+
+| Detalhes do resultado | |
+| --- | --- |
+| Neutrófilos (segmentados + bastões) | 60,0% |
+
+
+### 2
+
+Neutropenia moderada (500 a 999/µL)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Neutrófilos (segmentados + bastões) | 45,0% |
+
+
+### 3
+
+Neutropenia moderada (500 a 999/µL)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Neutrófilos (segmentados + bastões) | 25,0% |
+
+
+### 4
+
+Neutropenia profunda (< 100/µL)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Neutrófilos (segmentados + bastões) | 10,0% |
+
+Com febre (≥ 38,3 °C ou ≥ 38,0 °C por 1 h), é neutropenia febril: antibiótico empírico em até 1 hora.
+

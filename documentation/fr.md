@@ -69,3 +69,45 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Sans neutropénie
+
+| Détails du résultat | |
+| --- | --- |
+| Neutrophiles (segmentés + bâtonnets) | 60,0% |
+
+
+### 2
+
+Neutropénie modérée (500 à 999/µL)
+
+| Détails du résultat | |
+| --- | --- |
+| Neutrophiles (segmentés + bâtonnets) | 45,0% |
+
+
+### 3
+
+Neutropénie modérée (500 à 999/µL)
+
+| Détails du résultat | |
+| --- | --- |
+| Neutrophiles (segmentés + bâtonnets) | 25,0% |
+
+
+### 4
+
+Neutropénie profonde (< 100/µL)
+
+| Détails du résultat | |
+| --- | --- |
+| Neutrophiles (segmentés + bâtonnets) | 10,0% |
+
+En cas de fièvre (≥ 38,3 °C ou ≥ 38,0 °C pendant 1 h), il s’agit d’une neutropénie fébrile : antibiotique empirique dans un délai d’1 heure.
+

@@ -1,7 +1,9 @@
 # Code components: contagem-absoluta-de-neutrofilos
 
-The original public wrapper and standalone support code retain Apache-2.0 under the preserved LICENSE, NOTICE and AUTHORSHIP.md. The current adapter is copied byte a byte from the ELUCENIA per-tool integration component. Its MIT licence and existing source distribution notice are preserved as METHOD-CODE-LICENSE.txt and METHOD-CODE-NOTICE.md. This refresh does not change any licence or remove an attribution.
+The original public standalone wrapper and support code retain Apache-2.0 under the unchanged LICENSE, NOTICE and AUTHORSHIP.md. The per-tool mathematical adapter retains its unchanged MIT licence and source distribution notice in METHOD-CODE-LICENSE.txt and METHOD-CODE-NOTICE.md. No licence or attribution is rewritten.
 
-Original adapter: engine/tool-code/contagem-absoluta-de-neutrofilos/calculator.js; SHA-256 e864fbe12ea6192acfdb4df75758d2b5c59c1074a497c3d29545296e2d79caac. calculator.js only selects this adapter. calculator.browser.js has identical adapter bytes and is used by the standalone demonstration. No application tree, credentials, database, source paper or remote calculation code is included.
+Current adapter: engine/tool-code/contagem-absoluta-de-neutrofilos/calculator.js; SHA-256 cf93ed1284e189e6d61686ba9c2a3c884638c83fcc30ced990fcd8fbb7b9f035. calculator.js selects this adapter. calculator.browser.js embeds these exact adapter bytes, either directly or within its preserved fixed module bundle. The mathematical body and input validation are unchanged; the revision exposes existing optional result fields.
 
-Source-specific instrument/questionnaire wording and translated clinical descriptions are separate material scopes. Their complete rights, clinical validity and professional translation approval are not established by these software licences. See SOURCE-RIGHTS-REVIEW.md.
+portal-formatters.browser.js contains only five fixed pure ELUCENIA presentation modules, with explicit pinned inputs in publication-provenance.json. demo-runtime.js displays the resulting text via textContent/bdi and preserves original form controls. Neither support file contains a private application tree, network API, credentials, database, article PDF or third-party application code.
+
+Instrument/questionnaire expression and translation conditions remain separate material scopes. No whole-instrument rights, clinical or professional language approval is claimed. See SOURCE-RIGHTS-REVIEW.md.

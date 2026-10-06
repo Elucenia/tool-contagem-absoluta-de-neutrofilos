@@ -69,3 +69,45 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Keine Neutropenie
+
+| Ergebnisdetails | |
+| --- | --- |
+| Neutrophile (segmentierte + Stabkernige) | 60,0% |
+
+
+### 2
+
+Mäßige Neutropenie (500 bis 999/µL)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Neutrophile (segmentierte + Stabkernige) | 45,0% |
+
+
+### 3
+
+Mäßige Neutropenie (500 bis 999/µL)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Neutrophile (segmentierte + Stabkernige) | 25,0% |
+
+
+### 4
+
+Tiefgreifende Neutropenie (< 100/µL)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Neutrophile (segmentierte + Stabkernige) | 10,0% |
+
+Bei Fieber (≥ 38,3 °C oder ≥ 38,0 °C für 1 h) handelt es sich um eine febrile Neutropenie: empirisches Antibiotikum innerhalb von 1 Stunde.
+

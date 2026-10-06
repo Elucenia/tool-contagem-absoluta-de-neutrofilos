@@ -1,0 +1,273 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "contagem-absoluta-de-neutrofilos",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "085e14ec1085d93cef4f2181453f2e00d58f4910",
+    "oldEngineSha256": "e864fbe12ea6192acfdb4df75758d2b5c59c1074a497c3d29545296e2d79caac",
+    "currentEngineSha256": "cf93ed1284e189e6d61686ba9c2a3c884638c83fcc30ced990fcd8fbb7b9f035"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Leucócitos 5.000, segmentados 60%: 3.000/µL",
+      "input": {
+        "leuco": 5000,
+        "seg": 60
+      },
+      "publicOutput": {
+        "id": "contagem-absoluta-de-neutrofilos",
+        "main": [
+          "3.000",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "raw": {
+          "anc": 3000
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "anc": 3000
+        },
+        "main": "3.000",
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3.000",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "level": "low",
+        "verdict": "Sem neutropenia",
+        "rows": [
+          [
+            "Neutrófilos (segmentados + bastões)",
+            "60,0%"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "anc": 3000
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Leucócitos 2.000, segmentados 40%, bastões 5%: 900/µL",
+      "input": {
+        "leuco": 2000,
+        "seg": 40,
+        "bast": 5
+      },
+      "publicOutput": {
+        "id": "contagem-absoluta-de-neutrofilos",
+        "main": [
+          "900",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "raw": {
+          "anc": 900
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "anc": 900
+        },
+        "level": "mid",
+        "verdict": "moderada"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "900",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "level": "mid",
+        "verdict": "Neutropenia moderada (500 a 999/µL)",
+        "rows": [
+          [
+            "Neutrófilos (segmentados + bastões)",
+            "45,0%"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "anc": 900
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Corte: leucócitos 2.000, segmentados 20%, bastões 5%: 500/µL (moderada)",
+      "input": {
+        "leuco": 2000,
+        "seg": 20,
+        "bast": 5
+      },
+      "publicOutput": {
+        "id": "contagem-absoluta-de-neutrofilos",
+        "main": [
+          "500",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "raw": {
+          "anc": 500
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "anc": 500
+        },
+        "level": "mid",
+        "verdict": "moderada"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "500",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "level": "mid",
+        "verdict": "Neutropenia moderada (500 a 999/µL)",
+        "rows": [
+          [
+            "Neutrófilos (segmentados + bastões)",
+            "25,0%"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "anc": 500
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Leucócitos 800, segmentados 10%: 80/µL (profunda)",
+      "input": {
+        "leuco": 800,
+        "seg": 10
+      },
+      "publicOutput": {
+        "id": "contagem-absoluta-de-neutrofilos",
+        "main": [
+          "80",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "raw": {
+          "anc": 80
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "anc": 80
+        },
+        "level": "high",
+        "verdict": "profunda"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "80",
+          "/µL"
+        ],
+        "label": "Contagem absoluta de neutrófilos",
+        "level": "high",
+        "verdict": "Neutropenia profunda (< 100/µL)",
+        "rows": [
+          [
+            "Neutrófilos (segmentados + bastões)",
+            "10,0%"
+          ]
+        ],
+        "note": "Com febre (≥ 38,3 °C ou ≥ 38,0 °C por 1 h), é neutropenia febril: antibiótico empírico em até 1 hora.",
+        "raw": {
+          "anc": 80
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "Soma acima de 100%: erro",
+      "input": {
+        "leuco": 5000,
+        "seg": 90,
+        "bast": 20
+      },
+      "publicOutput": {
+        "error": "A soma de segmentados e bastões passa de 100%.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "sourceExpected": {
+        "error": true
+      },
+      "state": "existing-rejection"
+    }
+  ]
+}

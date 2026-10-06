@@ -144,7 +144,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "CAN:leucócitos×(segmentados+bastões)/100; contexto IDSA atualização 2010/publicação 2011",
-    "implementationVersion": "contagem-absoluta-de-neutrofilos@native-2026-10-03+e864fbe12ea6",
+    "implementationVersion": "contagem-absoluta-de-neutrofilos@native-2026-10-05+cf93ed1284e1",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/21258094/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -222,7 +222,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "e864fbe12ea6192acfdb4df75758d2b5c59c1074a497c3d29545296e2d79caac"
+      "implementationHash": "cf93ed1284e189e6d61686ba9c2a3c884638c83fcc30ced990fcd8fbb7b9f035",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "contagem-absoluta-de-neutrofilos@native-2026-10-03+e864fbe12ea6",
+          "previousImplementationHash": "e864fbe12ea6192acfdb4df75758d2b5c59c1074a497c3d29545296e2d79caac",
+          "implementationHash": "cf93ed1284e189e6d61686ba9c2a3c884638c83fcc30ced990fcd8fbb7b9f035",
+          "scientificBodySha256": "dafce5bab0c1ab1410b0c32f7bf57e4d9939f335a660bd53605a2de8735e073d",
+          "metadataContractHash": "7fdd3b09b50fee80c6594337851b9e9dbf1c33f3b620c31d2349696923a459d1",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A referência IDSA 2010/2011 aborda febre e neutropenia induzida por quimioterapia em pacientes com câncer, com estratificação dependente de sinais/sintomas, câncer, terapia e comorbidades. O valor calculado da contagem absoluta não substitui essa avaliação. Os limiares e unidades da definição devem ser conferidos no guideline integral; o resumo lido não os apresenta.",
     "sourceLimitEvidence": {
@@ -241,20 +269,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/contagem-absoluta-de-neutrofilos/calculator.js",
-    "bytes": 5125,
-    "sha256": "e864fbe12ea6192acfdb4df75758d2b5c59c1074a497c3d29545296e2d79caac"
+    "bytes": 5330,
+    "sha256": "cf93ed1284e189e6d61686ba9c2a3c884638c83fcc30ced990fcd8fbb7b9f035"
   },
-  "sourceToolSha256": "1fe9450c13ef28553d74464da80a9849a76012f8758c41171d9cf94382a1b804",
+  "sourceToolSha256": "e605d8c393fd9eb522791ddb890380d0898ba48e7c55e1d20c1225c741f22a96",
   "omittedFullReferenceBanks": [
     {
       "rows": 2,
       "sha256": "6f3b081bbbd2921a72319d638b39bddff2a5c605e0d18276d66785211d8b01e4",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 2,
       "sha256": "6f3b081bbbd2921a72319d638b39bddff2a5c605e0d18276d66785211d8b01e4",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

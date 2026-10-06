@@ -69,3 +69,45 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Senza neutropenia
+
+| Dettagli del risultato | |
+| --- | --- |
+| Neutrofili (segmentati + bastoncelli) | 60,0% |
+
+
+### 2
+
+Neutropenia moderata (500 a 999/µL)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Neutrofili (segmentati + bastoncelli) | 45,0% |
+
+
+### 3
+
+Neutropenia moderata (500 a 999/µL)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Neutrofili (segmentati + bastoncelli) | 25,0% |
+
+
+### 4
+
+Neutropenia profonda (< 100/µL)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Neutrofili (segmentati + bastoncelli) | 10,0% |
+
+Con febbre (≥ 38,3 °C o ≥ 38,0 °C per 1 h), è neutropenia febbrile: antibiotico empirico entro 1 ora.
+
